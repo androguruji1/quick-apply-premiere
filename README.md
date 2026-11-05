@@ -2,7 +2,21 @@
 
 Spotlight-style search for Adobe Premiere Pro. Press **⌥ Space**, type an effect, transition or one of your own saved presets, and press **↩** to apply it to the selected clips. Any result can get its own keyboard shortcut in two keystrokes.
 
-> The source code is private. This repository describes what Quick Apply does.
+**[⬇ Download the latest version](https://github.com/androguruji1/quick-apply-premiere/releases/latest)** · free for 14 days · **[Buy a license](https://superprofile.bio/androguruji)**
+
+> The source code is private. This repository describes what Quick Apply does and hosts the installer.
+
+---
+
+## Install
+
+1. Download `QuickApply-<version>-Install.zip` from the [latest release](https://github.com/androguruji1/quick-apply-premiere/releases/latest) and unzip it.
+2. Double-click **Install Quick Apply.command**.
+   If macOS says it can't be opened: **System Settings → Privacy & Security**, scroll down, click **Open Anyway**, then double-click it again.
+3. The key window opens. Paste your license key and click **Activate**, or **Start 14-day free trial**.
+4. In Premiere Pro, open **Window → UXP Plugins → Quick Apply** once. Then press **⌥ Space**.
+
+The installer puts **Quick Apply.app** in Applications (it opens at login, with a ⚡ in the menu bar) and installs the Premiere plugin with Adobe's own installer.
 
 ---
 
@@ -56,18 +70,27 @@ Spotlight-style search for Adobe Premiere Pro. Press **⌥ Space**, type an effe
 
 ---
 
+## License and updates
+
+- **14-day free trial** on each Mac, no key needed.
+- **One key works on 2 Macs.** To move it: ⚡ menu → License… → Deactivate on this Mac.
+- **Updates:** when a new version is out, the Quick Apply panel in Premiere shows **Update now**. One click updates the app and the plugin; Premiere doesn't need a restart. The ⚡ menu has **Check for Updates** too.
+- Works offline; the license is re-checked online about once a week.
+
+---
+
 ## How it works
 
 Quick Apply has two parts:
 - **A UXP panel inside Premiere Pro** reads Premiere's effect and transition lists and applies items to the selected clips.
 - **A small macOS menu bar app** runs the search window, the shortcuts and the confirmation pop-up. It also reads your saved presets.
 
-The two parts only talk to each other on your own Mac, and nothing is sent anywhere else.
+The two parts only talk to each other on your own Mac. The app contacts the license server only to check your key and look for updates; your projects, effects and presets never leave your Mac.
 
 ## Requirements
 
-- macOS
-- Adobe Premiere Pro 2026. It was tested on 26.5.2, finding 108 video effects, 78 audio effects and 106 transitions.
+- macOS 14 or later, Apple silicon or Intel
+- Adobe Premiere Pro 25.6 or later (2026 recommended). It was tested on 26.5.2, finding 108 video effects, 78 audio effects and 106 transitions.
 
 ## Known limits
 
